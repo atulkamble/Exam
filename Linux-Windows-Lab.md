@@ -1,11 +1,3 @@
-**BSC3PR10A Final Practical Exam** 
-
-* ⏱ **Duration: 1 Hour**
-* 🧑‍💻 Updated text: *“You are a Linux System Administrator at MIT-WPU Lab”*
-* 📘 Ready for upload to Google Classroom or print as a practical paper
-
----
-
 # 🧾 **Final Practical Exam: Linux & Windows Administration (Comprehensive Assessment)**
 
 **Course Code:** BSC3PR10A
@@ -18,7 +10,7 @@
 
 * **PDF Report:** Commands, steps, outputs, explanations, screenshots
 * **Script File:** `.sh` or `.ps1` file with comments
-
+* **Submit on Google Classroom** [https://classroom.google.com/c/Nzk0NTAxMzk2MDY2?cjc=njw3abxl](https://classroom.google.com/c/Nzk0NTAxMzk2MDY2?cjc=njw3abxl)
 ---
 
 ## 🧩 **SECTION A — LINUX ADMINISTRATION (50 Marks)**
