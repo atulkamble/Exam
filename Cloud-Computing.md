@@ -7,9 +7,9 @@
 
 **Submission Format:**
 
-* PDF Report (commands, steps, screenshots, outputs, explanations)
-* Configuration files 
-** Submit to Google Classroom** [https://classroom.google.com/c/Nzk0ODM0NDYzNTIy?cjc=2jth2i6b](https://classroom.google.com/c/Nzk0ODM0NDYzNTIy?cjc=2jth2i6b)
+- PDF Report (commands, steps, screenshots, outputs, explanations)
+- Configuration files
+- Submit to Google Classroom** [https://classroom.google.com/c/Nzk0ODM0NDYzNTIy?cjc=2jth2i6b](https://classroom.google.com/c/Nzk0ODM0NDYzNTIy?cjc=2jth2i6b)
 
 ---
 
