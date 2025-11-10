@@ -1,12 +1,12 @@
 
 # 🧾 **Final Exam – DevOps**
 
-**Course:** Cloud Computing / DevOps
-**Duration:** 2 Hours
-**Total Marks:** 50
-**Exam Type:** Practical (Hands-On Assessment)
-**Role:** You are working as a **DevOps Engineer at MIT-WPU Labs**.
-**Submission Format:**
+- **Course:** Cloud Computing / DevOps
+- **Duration:** 2 Hours
+- **Total Marks:** 50
+- **Exam Type:** Practical (Hands-On Assessment)
+- **Role:** You are working as a **DevOps Engineer at MIT-WPU Labs**.
+- **Submission Format:**
 
 ## 💡 **Submission Checklist**
 
