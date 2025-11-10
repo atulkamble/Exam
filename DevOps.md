@@ -10,10 +10,10 @@
 
 ## 💡 **Submission Checklist**
 
-✅ PDF report (steps, commands, screenshots)
-✅ GitHub repo link (code, YAML, Dockerfile, Jenkinsfile)
-✅ All tools configured successfully (Git, Docker, Jenkins, Terraform, K8s, AWS)
-✅ Submit via Google Classroom under topic **“Final Exam – DevOps”**
+- PDF report (steps, commands, screenshots)
+- GitHub repo link (code, YAML, Dockerfile, Jenkinsfile)
+- All tools configured successfully (Git, Docker, Jenkins, Terraform, K8s, AWS)
+- Submit via Google Classroom under topic **“Final Exam – DevOps”**
 
 ---
 
