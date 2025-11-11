@@ -135,4 +135,80 @@ Integrate multiple DevOps tools for a full pipeline.
 | **Documentation & GitHub Repo** | Organized code, readme, step-by-step explanations                 | 10           |
 | **Total**                       |                                                                   | **50 Marks** |
 
----
+
+## 🐳 Kubernetes deployment (app-deploy.yaml & app-service.yaml)
+
+Follow these steps to deploy the Dockerized app to a Kubernetes cluster, expose it via a NodePort, and demonstrate self-healing when a pod is deleted.
+
+1) (Optional) Build and push image
+
+	- If you're using a remote cluster (cloud), build and push an image to a registry (Docker Hub, ECR, etc.) and update the image name in `app-deploy.yaml`.
+
+```bash
+# Example (Docker Hub):
+docker build -t <your-dockerhub-username>/exam:latest .
+docker push <your-dockerhub-username>/exam:latest
+# Then update app-deploy.yaml to use <your-dockerhub-username>/exam:latest
+```
+
+	- If you're using `minikube` you can load the local image directly instead of pushing:
+
+```bash
+minikube image build -t exam:latest .   # or: docker build -t exam:latest . && minikube image load exam:latest
+```
+
+2) Apply the Kubernetes manifests
+
+```bash
+kubectl apply -f app-deploy.yaml
+kubectl apply -f app-service.yaml
+```
+
+3) Confirm resources
+
+```bash
+kubectl get deployments
+kubectl get pods
+kubectl get svc app-service
+```
+
+4) Access the app via EXTERNAL-IP:NodePort
+
+- If you are on a cloud cluster or have nodes with external IPs, find a node external IP and combine with the NodePort (30080):
+
+```bash
+kubectl get nodes -o wide
+# pick a node External-IP (or use cloud provider's node IP) and browse to http://<NODE_EXTERNAL_IP>:30080
+```
+
+- For `minikube` use the helper to get a URL:
+
+```bash
+minikube service app-service --url
+# or:
+minikube ip  # then http://<MINIKUBE_IP>:30080
+```
+
+5) Demonstrate self-healing (delete one pod)
+
+```bash
+# list pods
+kubectl get pods -l app=exam-app
+
+# delete one pod (use the pod name from the previous command)
+kubectl delete pod <POD_NAME>
+
+# watch new pod come up to replace it
+kubectl get pods -w
+```
+
+You should see Kubernetes terminate the deleted pod and the Deployment controller create a new pod to keep the replica count at 2.
+
+Troubleshooting
+- If pods stay in CrashLoopBackOff, describe the pod for details:
+  kubectl describe pod <POD_NAME>
+- If the image can't be pulled, ensure the image name is correct and accessible from the cluster, or use `imagePullPolicy: IfNotPresent` with images pre-loaded into nodes.
+
+Notes
+- The provided `app-deploy.yaml` uses `image: atulkamble/exam:latest`. Replace this with your registry image or load it into your cluster if using Minikube.
+- NodePort is set to `30080` in `app-service.yaml`. Change to another value if this port is unavailable.
