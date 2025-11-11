@@ -2,18 +2,10 @@
 # 🧾 **Final Exam – DevOps**
 
 - **Course:** Cloud Computing / DevOps
-- **Duration:** 2 Hours
+- **Duration:** 1 Hour
 - **Total Marks:** 50
 - **Exam Type:** Practical (Hands-On Assessment)
 - **Role:** You are working as a **DevOps Engineer at Cloudnautic**.
-- **Submission Format:** PDF report (steps, commands, screenshots)
-
-## 💡 **Submission Checklist**
-
-- PDF report (steps, commands, screenshots)
-- GitHub repo link (code, YAML, Dockerfile, Jenkinsfile)
-- All tools configured successfully (Git, Docker, Jenkins, Terraform, K8s, AWS)
-- Submit via Google Classroom [https://classroom.google.com/c/Nzk0ODM4ODQ4MTg4?cjc=2yuvll5y](https://classroom.google.com/c/Nzk0ODM4ODQ4MTg4?cjc=2yuvll5y) under topic **“Final Exam – DevOps”**
 
 ---
 
