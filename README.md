@@ -5,7 +5,7 @@
 - **Duration:** 2 Hours
 - **Total Marks:** 50
 - **Exam Type:** Practical (Hands-On Assessment)
-- **Role:** You are working as a **DevOps Engineer at MIT-WPU Labs**.
+- **Role:** You are working as a **DevOps Engineer at Cloudnautic**.
 - **Submission Format:** PDF report (steps, commands, screenshots)
 
 ## 💡 **Submission Checklist**
